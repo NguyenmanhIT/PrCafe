@@ -6,7 +6,6 @@
 package com.nguyenmanh.dao;
 
 /**
- *
  * @author Nguyen Manh
  */
 public interface TableDao {
