@@ -49,7 +49,7 @@ public class Login extends javax.swing.JFrame {
         txtUser = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
+        btnNhoMatKhau = new javax.swing.JCheckBox();
         txtPass = new javax.swing.JPasswordField();
         btnLogin = new javax.swing.JButton();
         lbConnect = new javax.swing.JLabel();
@@ -80,9 +80,9 @@ public class Login extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         jLabel7.setText("Nhớ mật khẩu");
 
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+        btnNhoMatKhau.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
+                btnNhoMatKhauActionPerformed(evt);
             }
         });
 
@@ -134,7 +134,7 @@ public class Login extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel7)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jCheckBox1)))
+                                .addComponent(btnNhoMatKhau)))
                         .addGap(46, 46, 46))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1)
@@ -159,7 +159,7 @@ public class Login extends javax.swing.JFrame {
                     .addComponent(txtPass))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jCheckBox1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnNhoMatKhau, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -188,9 +188,9 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtUserActionPerformed
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
+    private void btnNhoMatKhauActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNhoMatKhauActionPerformed
+
+    }//GEN-LAST:event_btnNhoMatKhauActionPerformed
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         // TODO add your handling code here:
@@ -202,10 +202,10 @@ public class Login extends javax.swing.JFrame {
                 if (rs.next()) {
                     //login success
                     employee_id = this.txtUser.getText();
-                    employee_pass = this.txtPass.getText();
-                    Main main = new Main();
+                    employee_pass =new String( this.txtPass.getPassword());
+                    Administrator administrator = new Administrator();
                     this.setVisible(false);
-                    main.setVisible(true);
+                    administrator.setVisible(true);
                     
                 } else {
                     JOptionPane.showMessageDialog(null, "Tài Khoản không tồn tại", "Thông Báo", 0);
@@ -260,8 +260,8 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnLogin;
+    private javax.swing.JCheckBox btnNhoMatKhau;
     private javax.swing.JButton jButton1;
-    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
