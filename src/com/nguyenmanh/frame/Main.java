@@ -5,6 +5,7 @@
  */
 package com.nguyenmanh.frame;
 
+import com.nguyenmanh.dao.InvoiceDao;
 import com.nguyenmanh.dao.ProductDao;
 import com.nguyenmanh.dao.TableDao;
 import com.nguyenmanh.model.Invoice;
@@ -611,6 +612,15 @@ public final class Main extends javax.swing.JFrame {
 
     private void btnThanhToanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThanhToanActionPerformed
 
+        InvoiceDao invoiceDao = new InvoiceDao();
+        Invoice invoice = arrInvoice.get(nTable);
+        if (invoice.total_product() > 0) {
+            invoiceDao.payInvoice(arrInvoice.get(nTable));
+            setValueOnClick("Thanh toán thành công!");
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "Chưa có sản phẩm được chọn");
+        }
     }//GEN-LAST:event_btnThanhToanActionPerformed
     
     private void setValueOnClick(String s){

@@ -85,7 +85,7 @@ public class Invoice {
        return total_money;
     }
     
-    private int total_product(){
+    public int total_product(){
         int result = 0;
         for(Product p : arrProduct){
             result += p.getProduct_quantity_sell();
