@@ -22,7 +22,8 @@ import javax.swing.JOptionPane;;
  * @author Nguyen Manh
  */
 public class Admin extends javax.swing.JFrame {
-        
+    
+    public static String sqlMenu = "SELECT product_id, product_name, product_price, product_unit FROM product_info";
     public static String sqlx = "SELECT product_id, product_name, product_cost, product_price, product_unit, product_image FROM product_info";
     public static String product_id;
     /**

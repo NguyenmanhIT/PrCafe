@@ -21,9 +21,12 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
+import java.beans.PropertyVetoException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -592,14 +595,28 @@ public final class Main extends javax.swing.JFrame {
     //click vào menu
     private void btnmenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmenuActionPerformed
 
+        Menu frmMenu = new Menu();
+        frmMenu.setVisible(true);
+        desktop.add(frmMenu);
+        try {
+            frmMenu.setSelected(true);
+        } catch (PropertyVetoException ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
     }//GEN-LAST:event_btnmenuActionPerformed
 
     //click list bàn
     private void btnListBanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListBanActionPerformed
-        // TODO add your handling code here:
-       
-
+        ListTable listTable = new ListTable();
+        listTable.setArrInvoice(arrInvoice);
+        listTable.setVisible(true);
+        desktop.add(listTable);
+        try {
+            listTable.setSelected(true);
+        } catch (PropertyVetoException ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_btnListBanActionPerformed
 
     private void jtblSuDungDichVuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtblSuDungDichVuMouseClicked
