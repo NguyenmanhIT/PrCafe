@@ -7,6 +7,4 @@ Mã SP | Tên Sản Phẩm  |  Đơn Giá | Số Lượng | Tổng Tiền
 113      P-Cherry      20000.0        1      20000.0
 114      Cafe Moka      10000.0        1      10000.0
 115      Robusta      50000.0        1      50000.0
-116      Espresso      40000.0        1      40000.0
-117      Macchiato      35000.0        1      35000.0
-Tổng số tiền phải thanh toán: 185000.0 VNĐ
+Tổng số tiền phải thanh toán: 110000.0 VNĐ

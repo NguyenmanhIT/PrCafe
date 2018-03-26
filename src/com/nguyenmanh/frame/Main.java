@@ -670,6 +670,14 @@ public final class Main extends javax.swing.JFrame {
 
     //click vào hóa đơn
     private void btnHoaDonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHoaDonActionPerformed
+        InvoiceF invoiceF = new InvoiceF();
+        invoiceF.setVisible(true);
+        desktop.add(invoiceF);
+        try {
+            invoiceF.setSelected(true);
+        } catch (PropertyVetoException ex) {
+            ex.printStackTrace();
+        }
 
     }//GEN-LAST:event_btnHoaDonActionPerformed
 
