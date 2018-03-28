@@ -53,6 +53,7 @@ public class InvoiceDao {
                 s+="\r\n";
             }
         }
+        s+="\r\n";
         s+="Tổng số tiền phải thanh toán: "+invoice.total_money_price() + " VNĐ";
         
         try {
