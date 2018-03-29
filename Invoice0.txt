@@ -1,5 +1,5 @@
-Hóa đơn của Bàn 02
-Ngày 2018 - 2 - 27
+Hóa đơn của Bàn 06
+Ngày 2018 - 2 - 29
 Danh sách sản phẩm
 Mã SP | Tên Sản Phẩm  |  Đơn Giá | Số Lượng | Tổng Tiền
 111      CF Arabica      20000.0        1      20000.0
