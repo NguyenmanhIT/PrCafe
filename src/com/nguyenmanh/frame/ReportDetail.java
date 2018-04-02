@@ -29,6 +29,8 @@ public class ReportDetail extends javax.swing.JFrame {
         setTitle("Chi tiết doanh thu");
         txtNgay.setText(this.getThoigian());
         UpdataTableDao.loadData(sql, tblBaoCao);
+        txtDoanhthu.setText("1675000");
+        txtLoinhuan.setText("625000");
     }
 
     public String getThoigian() {
@@ -90,6 +92,11 @@ public class ReportDetail extends javax.swing.JFrame {
         txtLoinhuan.setEditable(false);
         txtLoinhuan.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         txtLoinhuan.setForeground(new java.awt.Color(204, 0, 0));
+        txtLoinhuan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtLoinhuanActionPerformed(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setText("Báo Cáo Ngày : ");
@@ -193,6 +200,10 @@ public class ReportDetail extends javax.swing.JFrame {
         this.setVisible(false);
 
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txtLoinhuanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLoinhuanActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtLoinhuanActionPerformed
 
     /**
      * @param args the command line arguments

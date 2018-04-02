@@ -1,10 +1,11 @@
 Hóa đơn của Bàn 02
-Ngày 2018 - 2 - 30
+Ngày 2018 - 3 - 2
 Danh sách sản phẩm
 Mã SP | Tên Sản Phẩm  |  Đơn Giá | Số Lượng | Tổng Tiền
 111      CF Arabica      20000.0        1      20000.0
-112      Cafe Culi      10000.0        4      40000.0
 114      Cafe Moka      10000.0        1      10000.0
 115      Robusta      50000.0        1      50000.0
+121      Coca Cola      15000.0        4      60000.0
+122      G-Pepsi      12000.0        1      12000.0
 
-Tổng số tiền phải thanh toán: 120000.0 VNĐ
+Tổng số tiền phải thanh toán: 152000.0 VNĐ

@@ -655,8 +655,8 @@ public class Admin extends javax.swing.JFrame {
             MenuDao.updateMenu(product_id,
                     this.txtMaSp.getText().trim(), 
                     this.txtTenSP.getText().trim(), 
-                    this.txtGiaBan.getText().trim(), 
-                    this.txtGiaGoc.getText().trim(),
+                    this.txtGiaGoc.getText().trim(), 
+                    this.txtGiaBan.getText().trim(),
                     this.txtHinhAnh.getText().trim(),
                     this.txtDonViTinh.getText().trim());
             showData();
