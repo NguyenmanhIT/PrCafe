@@ -49,7 +49,7 @@ public final class Main extends javax.swing.JFrame {
     private final String[] columnName = {"STT", "Mã SP", "Tên SP", "Đơn Vị Tính", "Số lượng", "Đơn giá", "Thành Tiền"};
     
    /**
-     * Creates new form NguyenManh
+     * Creates new form NguyenManh get all invoice
      */
     public Main() {
         initComponents();

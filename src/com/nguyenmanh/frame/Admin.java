@@ -760,7 +760,7 @@ public class Admin extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBaoCaoHangNgayActionPerformed
 
     private void btnBaoCaoHangThangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBaoCaoHangThangActionPerformed
-        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Coding...!");
     }//GEN-LAST:event_btnBaoCaoHangThangActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
